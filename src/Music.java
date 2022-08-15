@@ -8,14 +8,14 @@ import java.util.Objects;
 
 public class Music {
 
-    private final URL CORRECT_PATH = this.getClass().getResource("/assets/correct.mp3");
-    private final URL WRONG_PATH = this.getClass().getResource("/assets/wrong.mp3");
-    private final URL WIN_PATH = this.getClass().getResource("/assets/win.mp3");
-    private final URL LOSE_PATH = this.getClass().getResource("/assets/lose.mp3");
+    private final URL CORRECT_PATH = this.getClass().getResource("/assets/correct.wav");
+    private final URL WRONG_PATH = this.getClass().getResource("/assets/wrong.wav");
+    private final URL WIN_PATH = this.getClass().getResource("/assets/win.wav");
+    private final URL LOSE_PATH = this.getClass().getResource("/assets/lose.wav");
 
     public Music () {
         try {
-            InputStream BACKGROUND_PATH = new BufferedInputStream(Objects.requireNonNull(this.getClass().getResourceAsStream("/assets/background.mp3")));
+            InputStream BACKGROUND_PATH = new BufferedInputStream(Objects.requireNonNull(this.getClass().getResourceAsStream("/assets/background.wav")));
             AudioInputStream audioBkgd = AudioSystem.getAudioInputStream(BACKGROUND_PATH);
             Clip backgroundClip = AudioSystem.getClip();
             backgroundClip.open(audioBkgd);
