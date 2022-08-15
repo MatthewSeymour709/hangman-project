@@ -1,0 +1,35 @@
+// Pseudo Code
+// have the user guess a letter
+// if letter IS in random word
+// display correct placement
+
+// else if user guesses wrong letter
+// display incorrect 
+// add ++1 to livesLost
+
+// else if user wants to guess a word
+// if word is correct
+// set gameOver to true
+// set isWinner to true
+// else word is incorrect
+// display incorrect
+// add ++1 to livesLost
+
+// else if user guesses wrong letter
+// print invalid input statement
+
+// if lives run out
+// set gameOver true
+// set isWinner to false
+
+// if user guesses the word
+// set gameOver to true
+// and set isWinner to true
+
+// else if user wants to exist
+// set gameOver to true
+
+// print gameOver message
+// print win or lose
+// print random word answer
+// display option to play again or exit
